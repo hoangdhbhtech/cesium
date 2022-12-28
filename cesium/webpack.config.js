@@ -24,6 +24,17 @@ module.exports = {
         alias: {
             cesium: path.resolve(__dirname, cesiumSource)
         },
+        fallback: {
+            "querystring": false,
+            "zlib": false,
+            "https":false,
+            "buffer": false,
+            "assert": false,
+            "stream": false,
+            "util": false,
+            "url": false,
+            "browser": false,
+        },
         mainFiles: ['module', 'main', 'Cesium']
     },
     module: {
